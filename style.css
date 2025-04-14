@@ -1,0 +1,317 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Logo and Navbar */
+  .navbar {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9290c3;
+    color: black;
+    padding: 1rem 2rem;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .logoname {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Nav links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+  }
+  
+  /* Hide both navs by default */
+  .large-nav,
+  .medium-nav {
+    display: none;
+  }
+  
+  /* menu */
+  .menu{
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  
+  /* Mobile menu panel */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100%;
+    width: 250px;
+    background-color: #444;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  /* Media Queries */
+  
+  /* Large screens: show full menu */
+  @media (min-width: 861px) {
+    .large-nav {
+      display: flex;
+    }
+  }
+  
+  /* Medium screens: show condensed menu */
+  @media (min-width: 600px) and (max-width: 860px) {
+    .medium-nav {
+      display: flex;
+    }
+  }
+  
+  /* Mobile: menu */
+  @media (max-width: 599px) {
+    .menu {
+      display: block;
+    }
+  }
+  
+  
+  
+  /*hero-sec1*/
+  .hero-sec1{
+    background-image: url("images/Teams Working Together Clipart Transparent PNG Hd, Team Work Web Concept People Together Connecting Piece Jigsaw Puzzle Business Leadership Partnership Team Metaphor Flat Vector Illustration, Puzzle .jpeg");
+    height: 360px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .hero-sec1 p{
+    font-family: 'Times New Roman', Arial;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-container {
+    perspective: 1000px;
+  }
+  
+  .card {
+    width: 15.50rem;
+    height: 15rem;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+  }
+  
+  .card.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 4px 5px 5px rgba(255, 255, 255, 0.393);
+    overflow: hidden;
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .card-front,
+  .card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .flip-btn {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .flip-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  
+  
+  
+  .hero-sec2{
+    background-color:#070f2b;
+  }
+  /*mech branch*/
+  .mech{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+  }
+  .hero-sec2 p{
+    color: white;
+  }
+  
+  /*hero-sec1*/
+  .hero-sec1{
+    background-image: url("images/Teams Working Together Clipart Transparent PNG Hd, Team Work Web Concept People Together Connecting Piece Jigsaw Puzzle Business Leadership Partnership Team Metaphor Flat Vector Illustration, Puzzle .jpeg");
+    height: 360px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .hero-sec1 p{
+    font-family: 'Times New Roman', Arial;
+    font-size: 4rem;
+    font-weight: 600;
+  }
+  
+  
+  
+  
+  /*cse*/
+  .cse{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+  
+  }
+  
+  
+  .hero-sec2{
+    display: flex;
+    flex-direction: column;
+    width: 95rem;
+  }
+  .hero-sec2 img{
+    border-radius: 50%;
+  }
+  .all_data{
+    display: flex;
+    justify-content: center;
+    background-color: #070f2b;
+  }
+  /*alumini heading1*/
+  .alumini {
+    height: 100px;
+  }
+  .alumini p{
+    font-size: 2.5rem;
+    font-family: lexend;
+    margin:24px ;
+  }
+  
+  /*branch name*/
+  .heading{
+    height: 100px;
+  }
+  .heading p{
+    font-size: 1.5rem;
+    font-family: lexend;
+    margin:24px ;
+  }
+  /*content*/
+  
+  .content-box{
+    height: 27rem;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 100px 50px 20px;
+  }
+  .content-box img{
+    height: 15rem;
+    padding: 0px 12px;
+  }
+  .name{
+    margin: 0.9rem ;
+    font-size: 0.8rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #9290c3;
+  }
+  
+  
+  
+  .comp{
+    margin-right: 20px;
+    height: 700px;
+  }
+  .row{
+    height: 300px;
+    display: flex;
+  }
